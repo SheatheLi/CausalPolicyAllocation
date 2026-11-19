@@ -1,0 +1,18 @@
+{
+  "issue": "scikit-learn/scikit-learn#34673",
+  "tested_source": "scikit-learn 1.8.0 isolated copy",
+  "origin": "Reporter prior art fix + independently tested IsolationForest semantic extension",
+  "scoring_comparison": {
+    "reporter_only_max_error": 0.09665234059892502,
+    "reporter_only_max_samples_inconsistent_cases": 72,
+    "enhanced_max_error": 0.0,
+    "enhanced_max_samples_inconsistent_cases": 0,
+    "cases": 72
+  },
+  "fit_successes": [
+    9,
+    12,
+    12
+  ],
+  "scope": "Local unreviewed source-level candidate; original upstream authorship NOT claimed"
+}

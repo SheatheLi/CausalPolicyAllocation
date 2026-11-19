@@ -1,0 +1,175 @@
+{
+  "issue": "scikit-learn/scikit-learn#34673",
+  "provenance": "Reporter proposed support-size clamp (not original)",
+  "result": "local native source candidate verified, not upstream merged",
+  "patch_dry_run": "checking file sklearn/ensemble/_bagging.py",
+  "patch_apply": "patching file sklearn/ensemble/_bagging.py",
+  "before": {
+    "source_version": "1.8.0",
+    "source_path": "/tmp/sklearn34673_qcp1uwqb/sklearn/__init__.py",
+    "cases": [
+      {
+        "estimator": "isolation",
+        "n": 80,
+        "zeros": 0,
+        "result": "success"
+      },
+      {
+        "estimator": "isolation",
+        "n": 80,
+        "zeros": 1,
+        "result": "ValueError: Fewer non-zero entries in p than size"
+      },
+      {
+        "estimator": "isolation",
+        "n": 80,
+        "zeros": 10,
+        "result": "ValueError: Fewer non-zero entries in p than size"
+      },
+      {
+        "estimator": "isolation",
+        "n": 300,
+        "zeros": 60,
+        "result": "ValueError: Fewer non-zero entries in p than size"
+      },
+      {
+        "estimator": "classifier",
+        "n": 80,
+        "zeros": 0,
+        "result": "success"
+      },
+      {
+        "estimator": "classifier",
+        "n": 80,
+        "zeros": 1,
+        "result": "success"
+      },
+      {
+        "estimator": "classifier",
+        "n": 80,
+        "zeros": 10,
+        "result": "success"
+      },
+      {
+        "estimator": "classifier",
+        "n": 300,
+        "zeros": 60,
+        "result": "success"
+      },
+      {
+        "estimator": "regressor",
+        "n": 80,
+        "zeros": 0,
+        "result": "success"
+      },
+      {
+        "estimator": "regressor",
+        "n": 80,
+        "zeros": 1,
+        "result": "success"
+      },
+      {
+        "estimator": "regressor",
+        "n": 80,
+        "zeros": 10,
+        "result": "success"
+      },
+      {
+        "estimator": "regressor",
+        "n": 300,
+        "zeros": 60,
+        "result": "success"
+      }
+    ],
+    "support_failures": 20,
+    "support_invariants_passed": 20,
+    "fit_successes": 9,
+    "fit_cases": 12
+  },
+  "after": {
+    "source_version": "1.8.0",
+    "source_path": "/tmp/sklearn34673_qcp1uwqb/sklearn/__init__.py",
+    "cases": [
+      {
+        "estimator": "isolation",
+        "n": 80,
+        "zeros": 0,
+        "result": "success"
+      },
+      {
+        "estimator": "isolation",
+        "n": 80,
+        "zeros": 1,
+        "result": "success"
+      },
+      {
+        "estimator": "isolation",
+        "n": 80,
+        "zeros": 10,
+        "result": "success"
+      },
+      {
+        "estimator": "isolation",
+        "n": 300,
+        "zeros": 60,
+        "result": "success"
+      },
+      {
+        "estimator": "classifier",
+        "n": 80,
+        "zeros": 0,
+        "result": "success"
+      },
+      {
+        "estimator": "classifier",
+        "n": 80,
+        "zeros": 1,
+        "result": "success"
+      },
+      {
+        "estimator": "classifier",
+        "n": 80,
+        "zeros": 10,
+        "result": "success"
+      },
+      {
+        "estimator": "classifier",
+        "n": 300,
+        "zeros": 60,
+        "result": "success"
+      },
+      {
+        "estimator": "regressor",
+        "n": 80,
+        "zeros": 0,
+        "result": "success"
+      },
+      {
+        "estimator": "regressor",
+        "n": 80,
+        "zeros": 1,
+        "result": "success"
+      },
+      {
+        "estimator": "regressor",
+        "n": 80,
+        "zeros": 10,
+        "result": "success"
+      },
+      {
+        "estimator": "regressor",
+        "n": 300,
+        "zeros": 60,
+        "result": "success"
+      }
+    ],
+    "support_invariants_passed": 40,
+    "fit_successes": 12,
+    "fit_cases": 12
+  },
+  "limits": [
+    "no full sklearn suite",
+    "no upstream review",
+    "not robust for zero-total weights"
+  ]
+}

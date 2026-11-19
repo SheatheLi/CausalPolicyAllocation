@@ -1,0 +1,82 @@
+{
+  "source_version": "1.8.0",
+  "source_path": "/mnt/data/final_build_20261014/isolated_sklearn/sklearn/__init__.py",
+  "cases": [
+    {
+      "estimator": "isolation",
+      "n": 80,
+      "zeros": 0,
+      "result": "success"
+    },
+    {
+      "estimator": "isolation",
+      "n": 80,
+      "zeros": 1,
+      "result": "ValueError: Fewer non-zero entries in p than size"
+    },
+    {
+      "estimator": "isolation",
+      "n": 80,
+      "zeros": 10,
+      "result": "ValueError: Fewer non-zero entries in p than size"
+    },
+    {
+      "estimator": "isolation",
+      "n": 300,
+      "zeros": 60,
+      "result": "ValueError: Fewer non-zero entries in p than size"
+    },
+    {
+      "estimator": "classifier",
+      "n": 80,
+      "zeros": 0,
+      "result": "success"
+    },
+    {
+      "estimator": "classifier",
+      "n": 80,
+      "zeros": 1,
+      "result": "success"
+    },
+    {
+      "estimator": "classifier",
+      "n": 80,
+      "zeros": 10,
+      "result": "success"
+    },
+    {
+      "estimator": "classifier",
+      "n": 300,
+      "zeros": 60,
+      "result": "success"
+    },
+    {
+      "estimator": "regressor",
+      "n": 80,
+      "zeros": 0,
+      "result": "success"
+    },
+    {
+      "estimator": "regressor",
+      "n": 80,
+      "zeros": 1,
+      "result": "success"
+    },
+    {
+      "estimator": "regressor",
+      "n": 80,
+      "zeros": 10,
+      "result": "success"
+    },
+    {
+      "estimator": "regressor",
+      "n": 300,
+      "zeros": 60,
+      "result": "success"
+    }
+  ],
+  "support_failures": 20,
+  "support_invariants_passed": 20,
+  "fit_successes": 9,
+  "fit_cases": 12
+}

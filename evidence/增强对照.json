@@ -1,0 +1,154 @@
+{
+  "five_seed_runs": [
+    {
+      "seed": 4,
+      "n_train": 2600,
+      "n_independent_truth": 2600,
+      "scenarios": 13,
+      "nominal_policy": {
+        "0": 1,
+        "1": 1,
+        "2": 0,
+        "3": 0
+      },
+      "robust_policy": {
+        "0": 1,
+        "1": 1,
+        "2": 0,
+        "3": 0
+      },
+      "nominal_true_worst": 0.3166924939017977,
+      "robust_true_worst": 0.3166924939017977,
+      "nominal_worst_lcb_on_scenarios": 0.29935464959721925,
+      "robust_optimization_lcb": 0.2993546495972193,
+      "nominal_max_budget_cost": 0.6346153846153846,
+      "robust_max_budget_cost": 0.6346153846153846,
+      "unsupported_arms": 1
+    },
+    {
+      "seed": 5,
+      "n_train": 2600,
+      "n_independent_truth": 2600,
+      "scenarios": 13,
+      "nominal_policy": {
+        "0": 1,
+        "1": 1,
+        "2": 0,
+        "3": 0
+      },
+      "robust_policy": {
+        "0": 1,
+        "1": 1,
+        "2": 0,
+        "3": 0
+      },
+      "nominal_true_worst": 0.3189483034581856,
+      "robust_true_worst": 0.3189483034581856,
+      "nominal_worst_lcb_on_scenarios": 0.28385137487533707,
+      "robust_optimization_lcb": 0.2838513748753371,
+      "nominal_max_budget_cost": 0.6461538461538462,
+      "robust_max_budget_cost": 0.6461538461538462,
+      "unsupported_arms": 1
+    },
+    {
+      "seed": 6,
+      "n_train": 2600,
+      "n_independent_truth": 2600,
+      "scenarios": 13,
+      "nominal_policy": {
+        "0": 1,
+        "1": 0,
+        "2": 1,
+        "3": 0
+      },
+      "robust_policy": {
+        "0": 1,
+        "1": 0,
+        "2": 1,
+        "3": 0
+      },
+      "nominal_true_worst": 0.29510738156374694,
+      "robust_true_worst": 0.29510738156374694,
+      "nominal_worst_lcb_on_scenarios": 0.2619901896766236,
+      "robust_optimization_lcb": 0.26199018967662363,
+      "nominal_max_budget_cost": 0.6369230769230769,
+      "robust_max_budget_cost": 0.6369230769230769,
+      "unsupported_arms": 1
+    },
+    {
+      "seed": 7,
+      "n_train": 2600,
+      "n_independent_truth": 2600,
+      "scenarios": 13,
+      "nominal_policy": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 1
+      },
+      "robust_policy": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 1
+      },
+      "nominal_true_worst": 0.25884036192597304,
+      "robust_true_worst": 0.27388261334650355,
+      "nominal_worst_lcb_on_scenarios": 0.24106371235155571,
+      "robust_optimization_lcb": 0.24199315262620394,
+      "nominal_max_budget_cost": 0.645,
+      "robust_max_budget_cost": 0.6257692307692307,
+      "unsupported_arms": 1
+    },
+    {
+      "seed": 8,
+      "n_train": 2600,
+      "n_independent_truth": 2600,
+      "scenarios": 13,
+      "nominal_policy": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 0
+      },
+      "robust_policy": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 0
+      },
+      "nominal_true_worst": 0.2507428174857451,
+      "robust_true_worst": 0.2507428174857451,
+      "nominal_worst_lcb_on_scenarios": 0.24712975636810403,
+      "robust_optimization_lcb": 0.24712975636810403,
+      "nominal_max_budget_cost": 0.4115384615384615,
+      "robust_max_budget_cost": 0.4115384615384615,
+      "unsupported_arms": 1
+    }
+  ],
+  "distribution_shift_discriminating_case": {
+    "seed": 4,
+    "n_fit": 1200,
+    "n_independent_truth": 4000,
+    "budget": 0.8,
+    "z": 0,
+    "min_ess": 4,
+    "scenarios": 13,
+    "nominal_policy": {
+      "0": 0,
+      "1": 2,
+      "2": 0,
+      "3": 0
+    },
+    "robust_policy": {
+      "0": 1,
+      "1": 1,
+      "2": 0,
+      "3": 0
+    },
+    "nominal_worst_optimized_utility": 0.28989563036921373,
+    "robust_worst_optimized_utility": 0.3150427351820636,
+    "nominal_independent_synthetic_truth": 0.268118806955699,
+    "robust_independent_synthetic_truth": 0.3211520160147337
+  }
+}

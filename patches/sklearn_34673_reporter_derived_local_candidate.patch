@@ -1,0 +1,11 @@
+--- a/sklearn/ensemble/_bagging.py
++++ b/sklearn/ensemble/_bagging.py
+@@ -140,6 +140,8 @@
+         )
+     else:
+         normalized_sample_weight = sample_weight / np.sum(sample_weight)
++        if not bootstrap_samples:
++            max_samples = min(max_samples, np.count_nonzero(sample_weight))
+         sample_indices = random_state.choice(
+             n_samples,
+             max_samples,

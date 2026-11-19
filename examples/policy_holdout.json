@@ -1,0 +1,291 @@
+{
+  "n_actions": 2,
+  "target": {
+    "control-region": 1
+  },
+  "baseline": {
+    "control-region": 0
+  },
+  "observations": [
+    {
+      "segment": "control-region",
+      "action": 0,
+      "reward": 0.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-0"
+    },
+    {
+      "segment": "control-region",
+      "action": 1,
+      "reward": 1.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-1"
+    },
+    {
+      "segment": "control-region",
+      "action": 0,
+      "reward": 0.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-2"
+    },
+    {
+      "segment": "control-region",
+      "action": 1,
+      "reward": 1.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-3"
+    },
+    {
+      "segment": "control-region",
+      "action": 0,
+      "reward": 0.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-0"
+    },
+    {
+      "segment": "control-region",
+      "action": 1,
+      "reward": 1.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-1"
+    },
+    {
+      "segment": "control-region",
+      "action": 0,
+      "reward": 0.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-2"
+    },
+    {
+      "segment": "control-region",
+      "action": 1,
+      "reward": 1.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-3"
+    },
+    {
+      "segment": "control-region",
+      "action": 0,
+      "reward": 0.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-0"
+    },
+    {
+      "segment": "control-region",
+      "action": 1,
+      "reward": 1.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-1"
+    },
+    {
+      "segment": "control-region",
+      "action": 0,
+      "reward": 0.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-2"
+    },
+    {
+      "segment": "control-region",
+      "action": 1,
+      "reward": 1.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-3"
+    },
+    {
+      "segment": "control-region",
+      "action": 0,
+      "reward": 0.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-0"
+    },
+    {
+      "segment": "control-region",
+      "action": 1,
+      "reward": 1.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-1"
+    },
+    {
+      "segment": "control-region",
+      "action": 0,
+      "reward": 0.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-2"
+    },
+    {
+      "segment": "control-region",
+      "action": 1,
+      "reward": 1.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-3"
+    },
+    {
+      "segment": "control-region",
+      "action": 0,
+      "reward": 0.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-0"
+    },
+    {
+      "segment": "control-region",
+      "action": 1,
+      "reward": 1.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-1"
+    },
+    {
+      "segment": "control-region",
+      "action": 0,
+      "reward": 0.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-2"
+    },
+    {
+      "segment": "control-region",
+      "action": 1,
+      "reward": 1.0,
+      "logging_probs": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        0.0,
+        1.0
+      ],
+      "fold_id": "holdout-3"
+    }
+  ]
+}

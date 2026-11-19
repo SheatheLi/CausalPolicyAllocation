@@ -1,0 +1,20 @@
+--- a/sklearn/ensemble/_iforest.py
++++ b/sklearn/ensemble/_iforest.py
+@@ -324,6 +324,17 @@
+ 
+         if sample_weight is not None:
+             sample_weight = _check_sample_weight(sample_weight, X, dtype=None)
++            # A zero-weight row is not part of the sampling population.
++            # Remove it before selecting max_samples_, growing the random
++            # seed stream, constructing trees and computing scores.
++            # Merely clamping bagging's sample draws can leave IsolationForest
++            # with max_samples_ larger than the actual bootstrap population.
++            keep = sample_weight != 0
++            if not np.any(keep):
++                raise ValueError("IsolationForest requires positive sample-weight support")
++            if not np.all(keep):
++                X = X[keep]
++                sample_weight = sample_weight[keep]
+ 
+         if issparse(X):
+             # Pre-sort indices to avoid that each individual tree of the

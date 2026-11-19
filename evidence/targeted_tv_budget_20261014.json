@@ -1,0 +1,32 @@
+{
+  "population": [
+    0.55,
+    0.3,
+    0.15
+  ],
+  "radius": 0.26,
+  "budget": 0.65,
+  "nominal": {
+    "policy": [
+      1,
+      0,
+      0
+    ],
+    "worst_case_reward": 0.6640000000000001,
+    "worst_case_spend": 0.81,
+    "worst_budget_violation": 0.16000000000000003,
+    "cuts": 1
+  },
+  "continuous_tv_robust": {
+    "policy": [
+      0,
+      1,
+      0
+    ],
+    "worst_case_reward": 0.22,
+    "worst_case_spend": 0.56,
+    "worst_budget_violation": 0,
+    "cuts": 4
+  },
+  "limitation": "Fixed synthetic payoffs; no causal identification or statistical coverage claim"
+}

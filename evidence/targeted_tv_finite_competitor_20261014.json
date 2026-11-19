@@ -1,0 +1,28 @@
+{
+  "budget": 0.95,
+  "radius": 0.12,
+  "scenario_count": 7,
+  "finite_scenario": {
+    "policy": [
+      0,
+      0,
+      1
+    ],
+    "continuous_tv_max_cost": 1.0,
+    "budget_violation": 0.050000000000000044,
+    "worst_payoff": 7.800000000000001
+  },
+  "tv_cutting_plane": {
+    "policy": [
+      0,
+      0,
+      0
+    ],
+    "continuous_tv_max_cost": 0.0,
+    "budget_violation": 0,
+    "worst_payoff": 0.0,
+    "cuts": 5,
+    "converged": true
+  },
+  "scope": "Constructed three-segment counterexample, not representative real-world rate"
+}

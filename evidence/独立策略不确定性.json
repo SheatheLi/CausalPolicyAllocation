@@ -1,0 +1,50 @@
+{
+  "scope": "synthetic randomized DGP; selected policy frozen before independent evaluation; confidence intervals rely on iid assumptions",
+  "rows": [
+    {
+      "seed": 3,
+      "policy": {
+        "0": 1,
+        "1": 0,
+        "2": 1,
+        "3": 0
+      },
+      "lift": 0.07748435616506016,
+      "lower": 0.04380009782969653,
+      "upper": 0.11547715586600113,
+      "accepted": true,
+      "n": 1600,
+      "effective_n": 1600.0
+    },
+    {
+      "seed": 7,
+      "policy": {
+        "0": 1,
+        "1": 1,
+        "2": 0,
+        "3": 0
+      },
+      "lift": 0.08701926284448713,
+      "lower": 0.054256107525739464,
+      "upper": 0.12360838294699271,
+      "accepted": true,
+      "n": 1600,
+      "effective_n": 1600.0
+    },
+    {
+      "seed": 11,
+      "policy": {
+        "0": 1,
+        "1": 0,
+        "2": 1,
+        "3": 0
+      },
+      "lift": 0.093818595971143,
+      "lower": 0.060023530502071855,
+      "upper": 0.12989440337816982,
+      "accepted": true,
+      "n": 1600,
+      "effective_n": 1600.0
+    }
+  ]
+}

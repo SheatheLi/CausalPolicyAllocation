@@ -1,0 +1,35 @@
+--- a/src/tv_robust_allocation.py
++++ b/src/tv_robust_allocation.py
+@@ -42,8 +42,16 @@
+              max_iterations=64, tolerance=1e-8):
+     reward_lcb=np.asarray(reward_lcb,float);p0=np.asarray(p0,float)
+     costs=np.asarray(costs,float)
++    if reward_lcb.ndim != 2:
++        raise ValueError('reward must be a 2D group by arm matrix')
+     g,arms=reward_lcb.shape
+-    if costs.shape!=(arms,) or p0.shape!=(g,) or np.any(costs<0) or not np.isfinite(reward_lcb).all():raise ValueError('shape/cost')
++    if (g == 0 or arms == 0 or costs.shape!=(arms,) or p0.shape!=(g,)
++        or not np.isfinite(p0).all() or np.any(p0<=0) or not np.isclose(p0.sum(),1.)
++        or not np.isfinite(costs).all() or np.any(costs<0)
++        or not np.isfinite(reward_lcb).all() or not np.isfinite(budget)
++        or budget < 0 or not np.isfinite(radius) or not 0 <= radius <= 1
++        or max_iterations < 1 or tolerance <= 0):
++        raise ValueError('invalid population, radius, cost, budget or optimization settings')
+     support=np.ones_like(reward_lcb,dtype=bool) if supported is None else np.asarray(supported,bool)
+     if support.shape!=reward_lcb.shape or not np.all(support.any(axis=1)):
+         raise ValueError('support infeasible')
+@@ -83,7 +91,13 @@
+         # If no useful violation exists, numerical convergence is attained.
+         if high_cost<=budget+tolerance and upper_bound-worst<=tolerance*10:
+             best.converged=True;return best
+-    return best
++    # A policy that has not closed the objective gap or feasibility separation
++    # is not an executable decision. Never silently turn it into a certificate.
++    raise RuntimeError(
++        f'robust optimization not certified after {max_iterations} iterations: '
++        f'worst_budget={best.worst_budget:.9g}, budget={budget:.9g}, '
++        f'objective_gap={best.upper_bound - best.lower_bound:.9g}'
++    )
+ 
+ 
+ def optimize_crossfit_trial(trial, dr, radius=.12, costs=(0.,1.,2.),

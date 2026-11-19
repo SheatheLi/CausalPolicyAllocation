@@ -1,0 +1,81 @@
+{
+  "source_version": "1.8.0",
+  "source_path": "/mnt/data/final_build_20261014/isolated_sklearn/sklearn/__init__.py",
+  "cases": [
+    {
+      "estimator": "isolation",
+      "n": 80,
+      "zeros": 0,
+      "result": "success"
+    },
+    {
+      "estimator": "isolation",
+      "n": 80,
+      "zeros": 1,
+      "result": "success"
+    },
+    {
+      "estimator": "isolation",
+      "n": 80,
+      "zeros": 10,
+      "result": "success"
+    },
+    {
+      "estimator": "isolation",
+      "n": 300,
+      "zeros": 60,
+      "result": "success"
+    },
+    {
+      "estimator": "classifier",
+      "n": 80,
+      "zeros": 0,
+      "result": "success"
+    },
+    {
+      "estimator": "classifier",
+      "n": 80,
+      "zeros": 1,
+      "result": "success"
+    },
+    {
+      "estimator": "classifier",
+      "n": 80,
+      "zeros": 10,
+      "result": "success"
+    },
+    {
+      "estimator": "classifier",
+      "n": 300,
+      "zeros": 60,
+      "result": "success"
+    },
+    {
+      "estimator": "regressor",
+      "n": 80,
+      "zeros": 0,
+      "result": "success"
+    },
+    {
+      "estimator": "regressor",
+      "n": 80,
+      "zeros": 1,
+      "result": "success"
+    },
+    {
+      "estimator": "regressor",
+      "n": 80,
+      "zeros": 10,
+      "result": "success"
+    },
+    {
+      "estimator": "regressor",
+      "n": 300,
+      "zeros": 60,
+      "result": "success"
+    }
+  ],
+  "support_invariants_passed": 40,
+  "fit_successes": 12,
+  "fit_cases": 12
+}
