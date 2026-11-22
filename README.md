@@ -1,5 +1,7 @@
 # CausalPolicyAllocation
 
+[**在线交互展示**](https://sheatheli.github.io/CausalPolicyAllocation/) · [**工程证据与验证索引**](docs/verification-map.md) · [![Smoke CI](https://github.com/SheatheLi/CausalPolicyAllocation/actions/workflows/smoke.yml/badge.svg)](https://github.com/SheatheLi/CausalPolicyAllocation/actions/workflows/smoke.yml)
+
 > 从历史日志中的因果效果估计出发，先审查新策略是否具备可评价性，再将收益估计纳入具有预算约束的分布鲁棒资源分配。项目保留“拒绝作出不可信决策”及收益代价，而不只展示优化器得分。
 
 **工程状态：** 离线分析与合成模拟原型，不是已上线的经营决策自动化系统，不能在缺少识别条件时宣称真实因果收益。
